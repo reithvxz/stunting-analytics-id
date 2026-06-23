@@ -1,6 +1,8 @@
 import React, { useMemo } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 import { useFilter } from '../context/FilterContext';
+import SpatialMap from '../components/SpatialMap';
+import ErrorBoundary from '../ErrorBoundary';
 
 const Regional = ({ data }) => {
   const { selectedIsland } = useFilter();
@@ -145,6 +147,19 @@ const Regional = ({ data }) => {
             </ResponsiveContainer>
           </div>
         </div>
+      </div>
+
+      {/* Render Spatial Map at the bottom, passing the full dataset so the map can always render Indonesia */}
+      <div style={{ marginTop: '64px', borderTop: '1px solid var(--glass-border)', paddingTop: '48px' }}>
+        <div className="page-header" style={{ marginBottom: '48px' }}>
+          <h1 className="page-title">Peta Spasial</h1>
+          <p className="page-description">
+            Visualisasi geografis distribusi stunting dan faktor determinannya di Indonesia.
+          </p>
+        </div>
+        <ErrorBoundary>
+          <SpatialMap data={data} />
+        </ErrorBoundary>
       </div>
 
     </div>

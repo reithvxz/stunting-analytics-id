@@ -326,100 +326,139 @@ const AdvancedAnalysis = ({ data }) => {
         </div>
       </div>
 
-      {/* Insight: Paradoks Infrastruktur */}
-      <div className="glass-panel" style={{ padding: '32px', marginBottom: '32px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
-          <div style={{ padding: '16px', background: 'rgba(6, 182, 212, 0.1)', color: '#06b6d4', borderRadius: '16px' }}>
-            <Droplets size={32} />
+      {/* Container Grid untuk Panel 6-13 */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '32px', marginBottom: '32px', alignItems: 'stretch' }}>
+        
+        {/* 6. Paradoks Infrastruktur Air Minum */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(6, 182, 212, 0.1)', color: '#06b6d4', borderRadius: '16px' }}>
+              <Droplets size={32} />
+            </div>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>6. Paradoks Infrastruktur Air Minum</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Pengujian empiris menyingkap sebuah paradoks statistik: <strong>Akses Air Minum Layak tidak berpengaruh signifikan secara tunggal terhadap penurunan stunting</strong> (p-value &gt; 0.05).
+              </p>
+              <div style={{ background: 'rgba(6, 182, 212, 0.05)', padding: '20px', borderRadius: '12px', display: 'flex', gap: '16px', alignItems: 'flex-start', flexGrow: 1 }}>
+                <Info size={24} color="#06b6d4" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
+                  <strong>Diskusi Akademis:</strong> Hasil ini tidak mengisyaratkan bahwa air minum itu "tidak penting". Alih-alih, ia menyimpulkan bahwa <strong>pengadaan infrastruktur fisik (seperti pipanisasi) akan sia-sia jika tidak dibarengi dengan intervensi struktural</strong> seperti peningkatan daya beli (pengentasan kemiskinan) dan edukasi gizi (IPM). Infrastruktur adalah <em>enabler</em>, bukan solusi final.
+                </p>
+              </div>
+            </div>
           </div>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>6. Paradoks Infrastruktur Air Minum</h2>
-            <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-              Pengujian empiris menyingkap sebuah paradoks statistik: <strong>Akses Air Minum Layak tidak berpengaruh signifikan secara tunggal terhadap penurunan stunting</strong> (p-value &gt; 0.05).
-            </p>
-            <div style={{ background: 'rgba(6, 182, 212, 0.05)', padding: '20px', borderRadius: '12px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-              <Info size={24} color="#06b6d4" style={{ flexShrink: 0, marginTop: '2px' }} />
-              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
-                <strong>Diskusi Akademis:</strong> Hasil ini tidak mengisyaratkan bahwa air minum itu "tidak penting". Alih-alih, ia menyimpulkan bahwa <strong>pengadaan infrastruktur fisik (seperti pipanisasi) akan sia-sia jika tidak dibarengi dengan intervensi struktural</strong> seperti peningkatan daya beli (pengentasan kemiskinan) dan edukasi gizi (IPM). Infrastruktur adalah <em>enabler</em>, bukan solusi final.
+        </div>
+
+        {/* 7. Target RPJMN vs Realita */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(234, 179, 8, 0.1)', color: '#eab308', borderRadius: '16px' }}>
+              <Target size={32} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>7. Evaluasi Target RPJMN (14%) vs Realita Nasional</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Pemerintah Indonesia menargetkan penurunan prevalensi stunting menjadi <strong>14%</strong> pada Rencana Pembangunan Jangka Menengah Nasional (RPJMN). Namun, analisis statistika deskriptif pada tahun 2023 menunjukkan bahwa rata-rata nasional masih tertahan di angka <strong>22.4%</strong>. Mayoritas provinsi (lebih dari 80%) masih berada jauh di atas ambang batas kritis yang ditetapkan WHO maupun target nasional.
               </p>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Insight 7-11 Baru */}
-      
-      {/* 7. Target RPJMN vs Realita */}
-      <div className="glass-panel" style={{ padding: '32px', marginBottom: '32px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
-          <div style={{ padding: '16px', background: 'rgba(234, 179, 8, 0.1)', color: '#eab308', borderRadius: '16px' }}>
-            <Target size={32} />
-          </div>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>7. Evaluasi Target RPJMN (14%) vs Realita Nasional</h2>
-            <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-              Pemerintah Indonesia menargetkan penurunan prevalensi stunting menjadi <strong>14%</strong> pada Rencana Pembangunan Jangka Menengah Nasional (RPJMN). Namun, analisis statistika deskriptif pada tahun 2023 menunjukkan bahwa rata-rata nasional masih tertahan di angka <strong>22.4%</strong>. Mayoritas provinsi (lebih dari 80%) masih berada jauh di atas ambang batas kritis yang ditetapkan WHO maupun target nasional.
-            </p>
+        {/* 8. Pengaruh Pengeluaran */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6', borderRadius: '16px' }}>
+              <ShoppingCart size={32} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>8. Pengeluaran Non-Makanan vs Makanan</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Sebuah temuan kontraintuitif muncul dari matriks korelasi: <strong>Pengeluaran Non-Makanan (r = -0.528) memiliki pengaruh yang lebih kuat</strong> dalam menurunkan stunting dibandingkan Pengeluaran Makanan (r = -0.397). Hal ini mengindikasikan bahwa keluarga yang mampu menyisihkan pendapatan untuk pendidikan, akses kesehatan yang layak, dan sanitasi, memiliki probabilitas jauh lebih tinggi untuk memiliki anak yang bebas stunting dibandingkan keluarga yang seluruh uangnya habis hanya untuk bertahan hidup membeli pangan dasar.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* 8. Pengaruh Pengeluaran */}
-      <div className="glass-panel" style={{ padding: '32px', marginBottom: '32px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
-          <div style={{ padding: '16px', background: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6', borderRadius: '16px' }}>
-            <ShoppingCart size={32} />
-          </div>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>8. Pengeluaran Non-Makanan vs Makanan</h2>
-            <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-              Sebuah temuan kontraintuitif muncul dari matriks korelasi: <strong>Pengeluaran Non-Makanan (r = -0.528) memiliki pengaruh yang lebih kuat</strong> dalam menurunkan stunting dibandingkan Pengeluaran Makanan (r = -0.397). Hal ini mengindikasikan bahwa keluarga yang mampu menyisihkan pendapatan untuk pendidikan, akses kesehatan yang layak, dan sanitasi, memiliki probabilitas jauh lebih tinggi untuk memiliki anak yang bebas stunting dibandingkan keluarga yang seluruh uangnya habis hanya untuk bertahan hidup membeli pangan dasar.
-            </p>
+        {/* 9. Kesenjangan Desa Kota */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', borderRadius: '16px' }}>
+              <Home size={32} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>9. Kesenjangan Struktural: Perdesaan vs Perkotaan</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Dekomposisi demografis menunjukkan bahwa stunting pada hakikatnya adalah <strong>krisis masyarakat perdesaan</strong>. Korelasi Kemiskinan Desa terhadap stunting sangat kuat (<strong>r = +0.523</strong>), berbanding terbalik dengan Kemiskinan Kota yang nyaris tidak berkorelasi (<strong>r = +0.056</strong>). Begitu pula dengan Air Minum Desa (r = -0.08) vs Air Minum Kota (r = -0.01). Kebijakan "pukul rata" antara desa dan kota terbukti tidak efektif karena lokus utama kerentanan kronis berada di pelosok desa.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* 9. Kesenjangan Desa Kota */}
-      <div className="glass-panel" style={{ padding: '32px', marginBottom: '32px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
-          <div style={{ padding: '16px', background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', borderRadius: '16px' }}>
-            <Home size={32} />
-          </div>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>9. Kesenjangan Struktural: Perdesaan vs Perkotaan</h2>
-            <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-              Dekomposisi demografis menunjukkan bahwa stunting pada hakikatnya adalah <strong>krisis masyarakat perdesaan</strong>. Korelasi Kemiskinan Desa terhadap stunting sangat kuat (<strong>r = +0.523</strong>), berbanding terbalik dengan Kemiskinan Kota yang nyaris tidak berkorelasi (<strong>r = +0.056</strong>). Begitu pula dengan Air Minum Desa (r = -0.08) vs Air Minum Kota (r = -0.01). Kebijakan "pukul rata" antara desa dan kota terbukti tidak efektif karena lokus utama kerentanan kronis berada di pelosok desa.
-            </p>
+        {/* 10. Sanitasi vs Air Minum */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '16px' }}>
+              <Heart size={32} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>10. Prioritas Ekologis: Sanitasi Mendahului Air Minum</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Dari dua indikator infrastruktur lingkungan, <strong>Sanitasi Layak (r = -0.418, p=0.015)</strong> terbukti signifikan memitigasi stunting, sedangkan Air Minum Layak (r = -0.176, p=0.325) tidak terbukti secara parsial. Interpretasi logisnya: penyediaan air bersih yang melimpah tidak akan berdampak pada kesehatan jika sanitasi dan manajemen limbah rumah tangga tetap buruk, karena patogen penyebab diare kronis (musuh utama penyerapan gizi balita) bersumber dari sanitasi yang tidak memadai.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* 10. Sanitasi vs Air Minum */}
-      <div className="glass-panel" style={{ padding: '32px', marginBottom: '32px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
-          <div style={{ padding: '16px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '16px' }}>
-            <Heart size={32} />
-          </div>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>10. Prioritas Ekologis: Sanitasi Mendahului Air Minum</h2>
-            <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-              Dari dua indikator infrastruktur lingkungan, <strong>Sanitasi Layak (r = -0.418, p=0.015)</strong> terbukti signifikan memitigasi stunting, sedangkan Air Minum Layak (r = -0.176, p=0.325) tidak terbukti secara parsial. Interpretasi logisnya: penyediaan air bersih yang melimpah tidak akan berdampak pada kesehatan jika sanitasi dan manajemen limbah rumah tangga tetap buruk, karena patogen penyebab diare kronis (musuh utama penyerapan gizi balita) bersumber dari sanitasi yang tidak memadai.
-            </p>
+        {/* 11. Regresi Gap Kemiskinan */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(139, 92, 246, 0.1)', color: '#8b5cf6', borderRadius: '16px' }}>
+              <Filter size={32} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>11. Model Multivariat: Efek "Gap" Kemiskinan</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Pengembangan model regresi lebih lanjut (R² = 0.306) memasukkan variabel <em>Gap Kemiskinan Desa-Kota</em> bersamaan dengan <em>Kemiskinan Total</em>. Hasilnya, <code style={{background:'rgba(0,0,0,0.05)', padding:'2px 6px', borderRadius:'4px'}}>Stunting = 17.11 + 0.44(Kemiskinan Total) + 0.16(Gap Desa-Kota)</code>. Model ini secara brilian membuktikan bahwa selain tingkat kemiskinan secara absolut, <strong>ketimpangan (gap) antara desa dan kota</strong> secara mandiri menyumbang peningkatan angka stunting (koefisien positif +0.16), menegaskan bahwa keadilan spasial sama pentingnya dengan pertumbuhan ekonomi.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* 11. Regresi Gap Kemiskinan */}
-      <div className="glass-panel" style={{ padding: '32px', marginBottom: '32px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
-          <div style={{ padding: '16px', background: 'rgba(139, 92, 246, 0.1)', color: '#8b5cf6', borderRadius: '16px' }}>
-            <Filter size={32} />
+        {/* 12. Komponen Indeks Ketahanan Pangan (IKP) */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '16px' }}>
+              <ShoppingCart size={32} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>12. Dekonstruksi Indeks Ketahanan Pangan (IKP) & Analisis Kuadran</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Membedah IKP menjadi 3 komponen utama. Hasilnya sangat kontras: <strong>Ketersediaan Pangan</strong> tidak memiliki korelasi signifikan terhadap stunting (p = 0.733). Namun, <strong>Keterjangkauan Pangan</strong> (daya beli, r = -0.499) dan <strong>Pemanfaatan Pangan</strong> (sanitasi & air, r = -0.490) terbukti sebagai komponen yang paling krusial dalam pencegahan stunting. 
+              </p>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Berdasarkan Analisis Kuadran IKP vs Stunting, 9 provinsi (sebagian besar di Indonesia Timur) masuk dalam <strong>Kuadran Prioritas</strong> (IKP Rendah, Stunting Tinggi). Sebaliknya, terdapat 8 provinsi <strong>Anomali</strong> (IKP Tinggi, Stunting Tinggi), yang mengindikasikan masalah murni di luar ketersediaan pangan seperti praktik pola asuh dan kualitas sanitasi pedesaan.
+              </p>
+            </div>
           </div>
-          <div style={{ flex: 1 }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>11. Model Multivariat: Efek "Gap" Kemiskinan</h2>
-            <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-              Pengembangan model regresi lebih lanjut (R² = 0.306) memasukkan variabel <em>Gap Kemiskinan Desa-Kota</em> bersamaan dengan <em>Kemiskinan Total</em>. Hasilnya, <code style={{background:'rgba(0,0,0,0.05)', padding:'2px 6px', borderRadius:'4px'}}>Stunting = 17.11 + 0.44(Kemiskinan Total) + 0.16(Gap Desa-Kota)</code>. Model ini secara brilian membuktikan bahwa selain tingkat kemiskinan secara absolut, <strong>ketimpangan (gap) antara desa dan kota</strong> secara mandiri menyumbang peningkatan angka stunting (koefisien positif +0.16), menegaskan bahwa keadilan spasial sama pentingnya dengan pertumbuhan ekonomi.
-            </p>
+        </div>
+
+        {/* 13. Tiga Pilar IPM */}
+        <div className="glass-panel" style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+            <div style={{ padding: '16px', background: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6', borderRadius: '16px' }}>
+              <Activity size={32} />
+            </div>
+            <div style={{ flex: 1 }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>13. Dekonstruksi 3 Pilar Indeks Pembangunan Manusia (IPM)</h2>
+              <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
+                Persamaan regresi <code>Stunting = 88.616 - 0.898(IPM)</code> membuktikan pengaruh kuat makro-pembangunan manusia. Penurunan stunting digerakkan oleh 3 pilar utama IPM: 
+                <br/><br/>
+                <strong>1. Dimensi Kesehatan:</strong> Kualitas layanan <em>Antenatal Care</em>, suplementasi gizi, dan penanganan infeksi pada 1000 Hari Pertama Kehidupan.<br/>
+                <strong>2. Dimensi Pengetahuan:</strong> Berpengaruh langsung pada <em>health literacy</em> orang tua dalam mengadopsi praktik MP-ASI responsif dan kebersihan domestik.<br/>
+                <strong>3. Dimensi Ekonomi:</strong> Kemampuan daya beli per kapita untuk menjangkau sumber protein hewani berkualitas tinggi (daging, telur, ikan, susu).
+              </p>
+            </div>
           </div>
         </div>
       </div>
