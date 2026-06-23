@@ -168,7 +168,7 @@ const AdvancedAnalysis = ({ data }) => {
               <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--glass-border)" />
                 <XAxis type="number" dataKey="PoU_2023" name="PoU" unit="%" stroke="var(--text-secondary)" domain={['dataMin - 2', 'dataMax + 2']} tickFormatter={(val) => Number(val).toFixed(0)} label={{ value: 'Ketidakcukupan Konsumsi Pangan (PoU %)', position: 'insideBottom', offset: -10, fill: 'var(--text-secondary)' }} />
-                <YAxis type="number" dataKey="Stunting_2023" name="Stunting" unit="%" stroke="var(--text-secondary)" domain={['dataMin - 2', 'dataMax + 2']} tickFormatter={(val) => Number(val).toFixed(0)} label={{ value: 'Prevalensi Stunting (%)', angle: -90, position: 'insideLeft', fill: 'var(--text-secondary)' }} />
+                <YAxis type="number" dataKey="Stunting_2023" name="Stunting" unit="%" stroke="var(--text-secondary)" domain={['dataMin - 2', 'dataMax + 2']} tickFormatter={(val) => Number(val).toFixed(0)} label={{ value: 'Prevalensi Stunting (%)', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle' }, fill: 'var(--text-secondary)' }} />
                 <ZAxis dataKey="Provinsi" name="Provinsi" />
                 <Tooltip content={<CustomTooltip />} cursor={{strokeDasharray: '3 3'}} />
                 <Scatter name="Provinsi" data={chartData}>
