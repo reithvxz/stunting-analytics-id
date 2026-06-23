@@ -17,6 +17,32 @@ const Overview = ({ data }) => {
     return [...filtered].sort((a, b) => b.IKPS_2023 - a.IKPS_2023);
   }, [data, selectedIsland]);
 
+  const getTrendLine = (data, xKey, yKey) => {
+    if (!data || data.length < 2) return null;
+    const n = data.length;
+    let sumX = 0, sumY = 0, sumXY = 0, sumXX = 0;
+    data.forEach(d => {
+      const x = d[xKey];
+      const y = d[yKey];
+      sumX += x;
+      sumY += y;
+      sumXY += x * y;
+      sumXX += x * x;
+    });
+    const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
+    const intercept = (sumY - slope * sumX) / n;
+    
+    const minX = Math.min(...data.map(d => d[xKey]));
+    const maxX = Math.max(...data.map(d => d[xKey]));
+    
+    return [
+      { x: minX, y: slope * minX + intercept },
+      { x: maxX, y: slope * maxX + intercept }
+    ];
+  };
+
+  const trendIpm = useMemo(() => getTrendLine(chartData, 'IPM_2023', 'Stunting_2023'), [chartData]);
+
   if (!chartData.length) return null;
 
   const pouData = [...chartData].sort((a, b) => b.PoU_2023 - a.PoU_2023);
@@ -87,11 +113,12 @@ const Overview = ({ data }) => {
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="var(--glass-border)" />
-              <XAxis type="number" dataKey="IPM_2023" name="IPM 2023" stroke="var(--text-secondary)" domain={['dataMin - 1', 'dataMax + 1']} tickFormatter={(val) => Number(val).toFixed(1)} />
-              <YAxis type="number" dataKey="Stunting_2023" name="Stunting (%)" stroke="var(--text-secondary)" domain={[0, 45]} tickFormatter={(val) => Number(val).toFixed(0)} />
+              <XAxis type="number" dataKey="IPM_2023" name="IPM 2023" stroke="var(--text-secondary)" domain={['dataMin - 1', 'dataMax + 1']} tickFormatter={(val) => Number(val).toFixed(1)} label={{ value: 'Indeks Pembangunan Manusia (Poin)', position: 'insideBottom', offset: -10, fill: 'var(--text-secondary)' }} />
+              <YAxis type="number" dataKey="Stunting_2023" name="Stunting (%)" stroke="var(--text-secondary)" domain={[0, 45]} tickFormatter={(val) => Number(val).toFixed(0)} label={{ value: 'Prevalensi Stunting (%)', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle' }, fill: 'var(--text-secondary)' }} />
               <ZAxis type="category" dataKey="Provinsi" name="Provinsi" />
               <Tooltip cursor={{strokeDasharray: '3 3'}} formatter={(val) => Number(val).toFixed(1)} />
               <Scatter name="Provinsi" data={chartData} fill="var(--accent-color)" />
+              {trendIpm && <ReferenceLine segment={trendIpm} stroke="var(--text-primary)" strokeDasharray="3 3" opacity={0.6} />}
             </ScatterChart>
           </ResponsiveContainer>
         </div>
