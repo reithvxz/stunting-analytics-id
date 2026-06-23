@@ -62,7 +62,7 @@ const Overview = ({ data }) => {
             <h3 style={{ fontWeight: 600, fontSize: '1.2rem' }}>Indeks Khusus Penanganan Stunting (IKPS)</h3>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Makin tinggi nilai IKPS, makin baik kinerja penanganan</p>
           </div>
-          <div style={{ height: '1000px' }}>
+          <div style={{ height: '720px' }}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={chartData} layout="vertical" margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--glass-border)" horizontal={false} />
@@ -85,7 +85,7 @@ const Overview = ({ data }) => {
             <h3 style={{ fontWeight: 600, fontSize: '1.2rem' }}>Ketidakcukupan Konsumsi Pangan (PoU)</h3>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Peringatan: Terdapat Outlier Ekstrem di Wilayah Timur</p>
           </div>
-          <div style={{ height: '1000px' }}>
+          <div style={{ height: '720px' }}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={pouData} layout="vertical" margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--glass-border)" horizontal={false} />
