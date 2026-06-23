@@ -66,7 +66,7 @@ const Overview = ({ data }) => {
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={chartData} layout="vertical" margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--glass-border)" horizontal={false} />
-                <XAxis type="number" stroke="var(--text-secondary)" domain={[50, 90]} tickFormatter={(val) => Number(val).toFixed(0)} />
+                <XAxis type="number" stroke="var(--text-secondary)" domain={[40, 90]} tickFormatter={(val) => Number(val).toFixed(0)} />
                 <YAxis dataKey="Provinsi" type="category" stroke="var(--text-secondary)" width={150} tick={{fontSize: 10, fill: 'var(--text-secondary)'}} interval={0} />
                 <Tooltip cursor={{fill: 'rgba(0,0,0,0.02)'}} formatter={(val) => Number(val).toFixed(2)} />
                 <Bar dataKey="IKPS_2023" name="Skor IKPS 2023" radius={[0, 4, 4, 0]} barSize={16}>
