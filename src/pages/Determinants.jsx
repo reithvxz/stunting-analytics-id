@@ -77,9 +77,8 @@ const Determinants = ({ data }) => {
           <div>
             <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--danger-color)', marginBottom: '8px' }}>Insight Analisis: Peringatan Outlier PoU Wilayah Timur</h3>
             <p style={{ color: 'var(--text-primary)', lineHeight: 1.6 }}>
-              Berdasarkan uji statistik (Metode Spearman), <strong>Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)</strong> memiliki sebaran yang tidak normal dengan outlier ekstrem di wilayah Indonesia Timur. 
-              <strong> Papua (35.63%)</strong> dan <strong>Maluku (30.27%)</strong> mencatat angka PoU tertinggi yang jauh melampaui batas kewajaran nasional.
-              Tingginya PoU dan angka stunting di wilayah ini menunjukkan adanya kerentanan pangan struktural.
+              Berdasarkan uji statistik, <strong>Prevalensi Ketidakcukupan Konsumsi Pangan (PoU)</strong> memiliki sebaran yang tidak normal (Shapiro-Wilk p &lt; 0,001) dengan outlier ekstrem di wilayah Indonesia Timur. 
+              <strong> Papua (35,63%)</strong>, <strong>Maluku (30,27%)</strong>, dan <strong>Maluku Utara (29,56%)</strong> mencatat angka PoU tertinggi. Korelasi PoU–Stunting terbukti <strong>TIDAK SIGNIFIKAN</strong> secara statistik (Spearman +0,231, p=0,188). Pada regresi berganda (R²=0,320), PoU tidak signifikan (p=0,757), dan Kemiskinan menjadi satu-satunya prediktor signifikan (β=+0,552, p=0,031) di mana semua asumsi klasik (VIF &lt; 2,7, normalitas, dan homoskedastik) terbukti terpenuhi.
             </p>
           </div>
         </div>
@@ -90,7 +89,7 @@ const Determinants = ({ data }) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
             <div>
               <h3 style={{ fontWeight: 600, fontSize: '1.1rem' }}>Ketidakcukupan Konsumsi Pangan (PoU)</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi positif yang diharapkan</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi: Spearman +0,231 (p=0,188, Tidak Signifikan)</p>
             </div>
             <div style={{ padding: '6px 12px', background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', borderRadius: '100px', fontSize: '0.85rem', fontWeight: 600 }}>
               Faktor 1
@@ -115,7 +114,7 @@ const Determinants = ({ data }) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
             <div>
               <h3 style={{ fontWeight: 600, fontSize: '1.1rem' }}>Kemiskinan Total (2023)</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi positif yang diharapkan</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi: Pearson +0,552 (p=0,001, Signifikan)</p>
             </div>
             <div style={{ padding: '6px 12px', background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b', borderRadius: '100px', fontSize: '0.85rem', fontWeight: 600 }}>
               Faktor 2
@@ -142,7 +141,7 @@ const Determinants = ({ data }) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
             <div>
               <h3 style={{ fontWeight: 600, fontSize: '1.1rem' }}>Indeks Pembangunan Manusia (IPM) 2023</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi negatif yang diharapkan</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi: Pearson -0,537 (p=0,0013, Signifikan)</p>
             </div>
             <div style={{ padding: '6px 12px', background: 'rgba(99, 102, 241, 0.1)', color: '#6366f1', borderRadius: '100px', fontSize: '0.85rem', fontWeight: 600 }}>
               Faktor 3
@@ -167,7 +166,7 @@ const Determinants = ({ data }) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
             <div>
               <h3 style={{ fontWeight: 600, fontSize: '1.1rem' }}>Akses Sanitasi Layak (2023)</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi negatif yang diharapkan</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Korelasi: Pearson -0,418 (p=0,015, Signifikan)</p>
             </div>
             <div style={{ padding: '6px 12px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '100px', fontSize: '0.85rem', fontWeight: 600 }}>
               Faktor 4

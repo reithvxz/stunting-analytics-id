@@ -83,7 +83,7 @@ const Overview = ({ data }) => {
         <div className="glass-panel" style={{ padding: '24px' }}>
           <div style={{ marginBottom: '24px' }}>
             <h3 style={{ fontWeight: 600, fontSize: '1.2rem' }}>Ketidakcukupan Konsumsi Pangan (PoU)</h3>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Peringatan: Terdapat Outlier Ekstrem di Wilayah Timur</p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Peringatan: Terdapat Outlier Ekstrem di Wilayah Timur | <strong>Sumber: Bapanas/BPS 2023</strong></p>
           </div>
           <div style={{ height: '720px' }}>
             <ResponsiveContainer width="100%" height="100%">
@@ -107,7 +107,7 @@ const Overview = ({ data }) => {
       <div className="glass-panel" style={{ padding: '24px' }}>
         <div style={{ marginBottom: '24px' }}>
           <h3 style={{ fontWeight: 600, fontSize: '1.2rem' }}>Korelasi IPM dan Stunting 2023</h3>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Indeks Pembangunan Manusia (IPM) berkorelasi negatif kuat dengan stunting</p>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Indeks Pembangunan Manusia (IPM) berkorelasi negatif kuat dengan stunting | <strong>Sumber: SKI 2023 (Kemenkes) / BPS 2023</strong></p>
         </div>
         <div style={{ height: '350px' }}>
           <ResponsiveContainer width="100%" height="100%">

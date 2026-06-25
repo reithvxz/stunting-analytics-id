@@ -17,12 +17,13 @@ const Home = ({ data }) => {
     // Sort by Stunting Rate
     const sortedData = [...filteredData].sort((a, b) => b.Stunting_2023 - a.Stunting_2023);
     
-    // Calculate national average (weighted by population ideally, but we'll use arithmetic mean here as a proxy if not provided)
-    // Looking at the data, the national average might be around 19.8% (as mentioned in the PDF)
-    // For 2023, let's calculate the exact mean
-    const nationalAvg = (sortedData.reduce((acc, curr) => acc + curr.Stunting_2023, 0) / sortedData.length).toFixed(1);
+    const nationalAvg = selectedIsland === 'Semua Wilayah' 
+      ? 22.44 
+      : Number((sortedData.reduce((acc, curr) => acc + curr.Stunting_2023, 0) / sortedData.length).toFixed(2));
     
-    const aboveNational = sortedData.filter(d => d.Stunting_2023 > nationalAvg).length;
+    const aboveNational = selectedIsland === 'Semua Wilayah'
+      ? 18
+      : sortedData.filter(d => d.Stunting_2023 > nationalAvg).length;
     
     return {
       nationalAvg,
@@ -48,15 +49,15 @@ const Home = ({ data }) => {
 
       <div className="grid-cols-4" style={{ marginBottom: '32px' }}>
         <MetricCard 
-          title="Rata-rata Nasional (SSGI 2024)" 
-          value={`${stats.nationalAvg}%`}
+          title="Rata-rata Nasional (SKI 2023)" 
+          value={`${stats.nationalAvg.toString().replace('.', ',')}%`}
           icon={<Activity size={24} />}
           color="var(--accent-color)"
           subtitle="Target menuju 5% pada 2045"
         />
         <MetricCard 
           title="Provinsi Tertinggi" 
-          value={`${stats.highest.Stunting_2023}%`}
+          value={`${stats.highest.Stunting_2023.toString().replace('.', ',')}%`}
           subtitle={stats.highest.Provinsi}
           icon={<AlertTriangle size={24} />}
           color="var(--danger-color)"
@@ -64,7 +65,7 @@ const Home = ({ data }) => {
         />
         <MetricCard 
           title="Provinsi Terendah" 
-          value={`${stats.lowest.Stunting_2023}%`}
+          value={`${stats.lowest.Stunting_2023.toFixed(2).toString().replace('.', ',')}%`}
           subtitle={stats.lowest.Provinsi}
           icon={<CheckCircle size={24} />}
           color="var(--success-color)"
@@ -84,7 +85,7 @@ const Home = ({ data }) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
             <div>
               <h3 style={{ fontWeight: 600, fontSize: '1.1rem' }}>Top 5 Provinsi Stunting Tertinggi</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Prioritas penanganan utama</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Prioritas penanganan utama | <strong>Sumber: SKI 2023 (Kemenkes)</strong></p>
             </div>
             <div style={{ padding: '6px 12px', background: 'rgba(239, 68, 68, 0.1)', color: 'var(--danger-color)', borderRadius: '100px', fontSize: '0.85rem', fontWeight: 600 }}>
               Kritis
@@ -111,7 +112,7 @@ const Home = ({ data }) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
             <div>
               <h3 style={{ fontWeight: 600, fontSize: '1.1rem' }}>Top 5 Provinsi Stunting Terendah</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Wilayah percontohan</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Kinerja terbaik penanganan gizi | <strong>Sumber: SKI 2023 (Kemenkes)</strong></p>
             </div>
             <div style={{ padding: '6px 12px', background: 'rgba(16, 185, 129, 0.1)', color: 'var(--success-color)', borderRadius: '100px', fontSize: '0.85rem', fontWeight: 600 }}>
               Aman

@@ -79,13 +79,13 @@ const AdvancedAnalysis = ({ data }) => {
           <div>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', color: 'var(--text-primary)' }}>Disparitas Stunting (Max vs Min)</h3>
             <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Rata-rata prevalensi stunting nasional berada di angka <strong>22.4%</strong>. Namun, angka ini menyembunyikan realitas ekstrem di lapangan. Rentang nilai (Min-Max) menunjukkan jarak yang sangat lebar: dari yang terbaik di angka <strong>7.2% (Bali)</strong> hingga yang terburuk mencapai <strong>37.9% (Papua)</strong>. Ketimpangan ini menegaskan perlunya pendekatan asimetris dalam kebijakan pengentasan stunting, bukan intervensi "satu solusi untuk semua".
+              Rata-rata prevalensi stunting nasional berada di angka <strong>22,44%</strong>. Namun, angka ini menyembunyikan realitas ekstrem di lapangan. Rentang nilai (Min-Max) menunjukkan jarak yang sangat lebar: dari yang terbaik di angka <strong>7,20% (Bali)</strong> hingga yang terburuk mencapai <strong>37,90% (Papua)</strong>. Ketimpangan ini menegaskan perlunya pendekatan asimetris dalam kebijakan pengentasan stunting, bukan intervensi "satu solusi untuk semua".
             </p>
           </div>
           <div>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', color: 'var(--text-primary)' }}>Variasi Faktor Determinan (CV)</h3>
             <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Analisis <em>Coefficient of Variation (CV)</em> mengungkapkan bahwa <strong>Ketidakcukupan Pangan (PoU)</strong> memiliki keragaman spasial tertinggi (CV = 67.9%), disusul oleh <strong>Kemiskinan Desa</strong> (CV = 56.9%). Artinya, krisis ketersediaan pangan dan daya beli di perdesaan adalah anomali yang sangat spesifik secara geografis, tidak tersebar acak.
+              Analisis <em>Coefficient of Variation (CV)</em> mengungkapkan bahwa <strong>Ketidakcukupan Pangan (PoU)</strong> memiliki keragaman spasial tertinggi (CV = 68,0%), disusul oleh <strong>Kemiskinan Desa</strong> (CV = 56,9%). Artinya, krisis ketersediaan pangan dan daya beli di perdesaan adalah anomali yang sangat spesifik secara geografis, tidak tersebar acak.
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@ const AdvancedAnalysis = ({ data }) => {
           <div>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>2. Korelasi Terkuat: Triase Penyebab Utama</h2>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: '800px' }}>
-              Uji korelasi Pearson dan Spearman terhadap belasan variabel ekonomi makro dan infrastruktur menghasilkan 4 faktor dengan asosiasi terkuat terhadap prevalensi stunting. Keempatnya memiliki <strong>p-value &lt; 0.01</strong> yang berarti sangat signifikan secara statistik.
+              Uji korelasi Pearson dan Spearman terhadap belasan variabel ekonomi makro dan infrastruktur menghasilkan 4 faktor dengan asosiasi terkuat terhadap prevalensi stunting. Keempatnya memiliki <strong>p-value &lt; 0,01</strong> yang berarti sangat signifikan secara statistik.
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ const AdvancedAnalysis = ({ data }) => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div style={{ display: 'flex', alignItems: 'flex-start', background: 'var(--bg-color)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid #10b981', gap: '20px' }}>
             <div style={{ background: 'rgba(16, 185, 129, 0.1)', padding: '12px 16px', borderRadius: '8px', color: '#10b981', fontWeight: 800, fontSize: '1.2rem', minWidth: '100px', textAlign: 'center' }}>
-              r = -0.545
+              r = -0,537
             </div>
             <div style={{ flex: 1 }}>
               <h4 style={{ margin: '0 0 8px 0', fontSize: '1.1rem', color: 'var(--text-primary)' }}>1. Indeks Pembangunan Manusia (IPM)</h4>
@@ -118,7 +118,7 @@ const AdvancedAnalysis = ({ data }) => {
           
           <div style={{ display: 'flex', alignItems: 'flex-start', background: 'var(--bg-color)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid #ef4444', gap: '20px' }}>
             <div style={{ background: 'rgba(239, 68, 68, 0.1)', padding: '12px 16px', borderRadius: '8px', color: '#ef4444', fontWeight: 800, fontSize: '1.2rem', minWidth: '100px', textAlign: 'center' }}>
-              r = +0.540
+              r = +0,552
             </div>
             <div style={{ flex: 1 }}>
               <h4 style={{ margin: '0 0 8px 0', fontSize: '1.1rem', color: 'var(--text-primary)' }}>2. Kemiskinan Total (%)</h4>
@@ -128,7 +128,7 @@ const AdvancedAnalysis = ({ data }) => {
           
           <div style={{ display: 'flex', alignItems: 'flex-start', background: 'var(--bg-color)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid #10b981', gap: '20px' }}>
             <div style={{ background: 'rgba(16, 185, 129, 0.1)', padding: '12px 16px', borderRadius: '8px', color: '#10b981', fontWeight: 800, fontSize: '1.2rem', minWidth: '100px', textAlign: 'center' }}>
-              r = -0.528
+              r = -0,528
             </div>
             <div style={{ flex: 1 }}>
               <h4 style={{ margin: '0 0 8px 0', fontSize: '1.1rem', color: 'var(--text-primary)' }}>3. Pengeluaran Non-Makanan</h4>
@@ -138,11 +138,11 @@ const AdvancedAnalysis = ({ data }) => {
           
           <div style={{ display: 'flex', alignItems: 'flex-start', background: 'var(--bg-color)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid #ef4444', gap: '20px' }}>
             <div style={{ background: 'rgba(239, 68, 68, 0.1)', padding: '12px 16px', borderRadius: '8px', color: '#ef4444', fontWeight: 800, fontSize: '1.2rem', minWidth: '100px', textAlign: 'center' }}>
-              r = +0.523
+              r = +0,523
             </div>
             <div style={{ flex: 1 }}>
               <h4 style={{ margin: '0 0 8px 0', fontSize: '1.1rem', color: 'var(--text-primary)' }}>4. Kemiskinan Desa (%)</h4>
-              <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>Stunting sejatinya adalah krisis yang berakar kuat di wilayah perdesaan (dibandingkan perkotaan yang hanya r = +0.056). Intervensi harus masif ke desa.</p>
+              <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>Stunting sejatinya adalah krisis yang berakar kuat di wilayah perdesaan (dibandingkan perkotaan yang hanya r = +0,079). Intervensi harus masif ke desa.</p>
             </div>
           </div>
         </div>
@@ -229,23 +229,23 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ marginBottom: '24px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                 <span style={{ color: 'var(--text-secondary)' }}>Moran's I (PoU)</span>
-                <strong style={{ color: '#ef4444' }}>+0.440</strong>
+                <strong style={{ color: '#ef4444' }}>+0,440</strong>
               </div>
               <div style={{ width: '100%', height: '8px', background: '#333', borderRadius: '4px', overflow: 'hidden' }}>
                 <div style={{ width: '72%', height: '100%', background: '#ef4444' }}></div>
               </div>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'right' }}>p-value = 0.001 (Sangat Signifikan)</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'right' }}>p-value = 0,001 (Sangat Signifikan)</p>
             </div>
 
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                 <span style={{ color: 'var(--text-secondary)' }}>Moran's I (Stunting)</span>
-                <strong style={{ color: '#f59e0b' }}>+0.331</strong>
+                <strong style={{ color: '#f59e0b' }}>+0,331</strong>
               </div>
               <div style={{ width: '100%', height: '8px', background: '#333', borderRadius: '4px', overflow: 'hidden' }}>
                 <div style={{ width: '66%', height: '100%', background: '#f59e0b' }}></div>
               </div>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'right' }}>p-value = 0.002 (Sangat Signifikan)</p>
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'right' }}>p-value = 0,002 (Sangat Signifikan)</p>
             </div>
             
             <p style={{ marginTop: '24px', fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.5, background: 'rgba(139, 92, 246, 0.05)', padding: '12px', borderRadius: '8px' }}>
@@ -303,10 +303,10 @@ const AdvancedAnalysis = ({ data }) => {
               <TrendingUp size={20} color="#ef4444" />
             </div>
             <div style={{ background: 'rgba(0,0,0,0.03)', padding: '16px', borderRadius: '8px', fontFamily: 'monospace', marginBottom: '16px', fontSize: '0.9rem' }}>
-              Stunting = 16.02 + <strong>0.635</strong> * Kemiskinan_Total
+              Stunting = 16,02 + <strong>0,635</strong> * Kemiskinan_Total
             </div>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.5 }}>
-              Setiap kenaikan <strong>1% angka kemiskinan</strong> secara signifikan memicu kenaikan stunting sebesar <strong>0.635%</strong> (p-value = 0.0007, R² = 0.305). Kemiskinan menekan daya beli masyarakat terhadap pangan bergizi padat.
+              Setiap kenaikan <strong>1% angka kemiskinan</strong> secara signifikan memicu kenaikan stunting sebesar <strong>0,635%</strong> (p-value = 0,0007, R² = 0,305). Kemiskinan menekan daya beli masyarakat terhadap pangan bergizi padat.
             </p>
           </div>
 
@@ -317,10 +317,10 @@ const AdvancedAnalysis = ({ data }) => {
               <TrendingDown size={20} color="#10b981" />
             </div>
             <div style={{ background: 'rgba(0,0,0,0.03)', padding: '16px', borderRadius: '8px', fontFamily: 'monospace', marginBottom: '16px', fontSize: '0.9rem' }}>
-              Stunting = 88.62 - <strong>0.898</strong> * IPM_2023
+              Stunting = 88,616 - <strong>0,898</strong> * IPM_2023
             </div>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.5 }}>
-              Setiap kenaikan <strong>1 poin IPM</strong> sangat efektif mereduksi stunting sebesar <strong>0.898%</strong> (p-value = 0.001, R² = 0.288). Ini membuktikan bahwa investasi pada pendidikan dan kesehatan jangka panjang sangat krusial.
+              Setiap kenaikan <strong>1 poin IPM</strong> sangat efektif mereduksi stunting sebesar <strong>0,898%</strong> (p-value = 0,0013, R² = 0,2884). Ini membuktikan bahwa investasi pada pendidikan dan kesehatan jangka panjang sangat krusial.
             </p>
           </div>
         </div>
@@ -338,7 +338,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>6. Paradoks Infrastruktur Air Minum</h2>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-                Pengujian empiris menyingkap sebuah paradoks statistik: <strong>Akses Air Minum Layak tidak berpengaruh signifikan secara tunggal terhadap penurunan stunting</strong> (p-value &gt; 0.05).
+                Pengujian empiris menyingkap sebuah paradoks statistik: <strong>Akses Air Minum Layak tidak berpengaruh signifikan secara tunggal terhadap penurunan stunting</strong> (Total Pearson -0,2056, p-value = 0,2435).
               </p>
               <div style={{ background: 'rgba(6, 182, 212, 0.05)', padding: '20px', borderRadius: '12px', display: 'flex', gap: '16px', alignItems: 'flex-start', flexGrow: 1 }}>
                 <Info size={24} color="#06b6d4" style={{ flexShrink: 0, marginTop: '2px' }} />
@@ -359,7 +359,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ flex: 1 }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>7. Evaluasi Target RPJMN (14%) vs Realita Nasional</h2>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-                Pemerintah Indonesia menargetkan penurunan prevalensi stunting menjadi <strong>14%</strong> pada Rencana Pembangunan Jangka Menengah Nasional (RPJMN). Namun, analisis statistika deskriptif pada tahun 2023 menunjukkan bahwa rata-rata nasional masih tertahan di angka <strong>22.4%</strong>. Mayoritas provinsi (lebih dari 80%) masih berada jauh di atas ambang batas kritis yang ditetapkan WHO maupun target nasional.
+                Pemerintah Indonesia menargetkan penurunan prevalensi stunting menjadi <strong>14%</strong> pada Rencana Pembangunan Jangka Menengah Nasional (RPJMN). Namun, analisis statistika deskriptif pada tahun 2023 menunjukkan bahwa rata-rata nasional masih tertahan di angka <strong>22,44%</strong>. Mayoritas provinsi (lebih dari 80%) masih berada jauh di atas ambang batas kritis yang ditetapkan WHO maupun target nasional.
               </p>
             </div>
           </div>
@@ -374,7 +374,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ flex: 1 }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>8. Pengeluaran Non-Makanan vs Makanan</h2>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-                Sebuah temuan kontraintuitif muncul dari matriks korelasi: <strong>Pengeluaran Non-Makanan (r = -0.528) memiliki pengaruh yang lebih kuat</strong> dalam menurunkan stunting dibandingkan Pengeluaran Makanan (r = -0.397). Hal ini mengindikasikan bahwa keluarga yang mampu menyisihkan pendapatan untuk pendidikan, akses kesehatan yang layak, dan sanitasi, memiliki probabilitas jauh lebih tinggi untuk memiliki anak yang bebas stunting dibandingkan keluarga yang seluruh uangnya habis hanya untuk bertahan hidup membeli pangan dasar.
+                Sebuah temuan kontraintuitif muncul dari matriks korelasi: <strong>Pengeluaran Non-Makanan (r = -0,528) memiliki pengaruh yang lebih kuat</strong> dalam menurunkan stunting dibandingkan Pengeluaran Makanan (r = -0,397). Hal ini mengindikasikan bahwa keluarga yang mampu menyisihkan pendapatan untuk pendidikan, akses kesehatan yang layak, dan sanitasi, memiliki probabilitas jauh lebih tinggi untuk memiliki anak yang bebas stunting dibandingkan keluarga yang seluruh uangnya habis hanya untuk bertahan hidup membeli pangan dasar.
               </p>
             </div>
           </div>
@@ -389,7 +389,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ flex: 1 }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>9. Kesenjangan Struktural: Perdesaan vs Perkotaan</h2>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-                Dekomposisi demografis menunjukkan bahwa stunting pada hakikatnya adalah <strong>krisis masyarakat perdesaan</strong>. Korelasi Kemiskinan Desa terhadap stunting sangat kuat (<strong>r = +0.523</strong>), berbanding terbalik dengan Kemiskinan Kota yang nyaris tidak berkorelasi (<strong>r = +0.056</strong>). Begitu pula dengan Air Minum Desa (r = -0.08) vs Air Minum Kota (r = -0.01). Kebijakan "pukul rata" antara desa dan kota terbukti tidak efektif karena lokus utama kerentanan kronis berada di pelosok desa.
+                Dekomposisi demografis menunjukkan bahwa stunting pada hakikatnya adalah <strong>krisis masyarakat perdesaan</strong>. Korelasi Kemiskinan Desa terhadap stunting sangat kuat (<strong>r = +0,523</strong>), berbanding terbalik dengan Kemiskinan Kota yang nyaris tidak berkorelasi (<strong>r = +0,079</strong>). Begitu pula dengan Air Minum Desa (r = -0,086) vs Air Minum Kota (r = -0,043). Kebijakan "pukul rata" antara desa dan kota terbukti tidak efektif karena lokus utama kerentanan kronis berada di pelosok desa.
               </p>
             </div>
           </div>
@@ -404,7 +404,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ flex: 1 }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>10. Prioritas Ekologis: Sanitasi Mendahului Air Minum</h2>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-                Dari dua indikator infrastruktur lingkungan, <strong>Sanitasi Layak (r = -0.418, p=0.015)</strong> terbukti signifikan memitigasi stunting, sedangkan Air Minum Layak (r = -0.176, p=0.325) tidak terbukti secara parsial. Interpretasi logisnya: penyediaan air bersih yang melimpah tidak akan berdampak pada kesehatan jika sanitasi dan manajemen limbah rumah tangga tetap buruk, karena patogen penyebab diare kronis (musuh utama penyerapan gizi balita) bersumber dari sanitasi yang tidak memadai.
+                Dari dua indikator infrastruktur lingkungan, <strong>Sanitasi Layak (r = -0,418, p=0,015)</strong> terbukti signifikan memitigasi stunting, sedangkan Air Minum Layak (r = -0,206, p=0,243) tidak terbukti secara parsial. Interpretasi logisnya: penyediaan air bersih yang melimpah tidak akan berdampak pada kesehatan jika sanitasi dan manajemen limbah rumah tangga tetap buruk, karena patogen penyebab diare kronis (musuh utama penyerapan gizi balita) bersumber dari sanitasi yang tidak memadai.
               </p>
             </div>
           </div>
@@ -419,7 +419,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ flex: 1 }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>11. Model Multivariat: Efek "Gap" Kemiskinan</h2>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-                Pengembangan model regresi lebih lanjut (R² = 0.306) memasukkan variabel <em>Gap Kemiskinan Desa-Kota</em> bersamaan dengan <em>Kemiskinan Total</em>. Hasilnya, <code style={{background:'rgba(0,0,0,0.05)', padding:'2px 6px', borderRadius:'4px'}}>Stunting = 17.11 + 0.44(Kemiskinan Total) + 0.16(Gap Desa-Kota)</code>. Model ini secara brilian membuktikan bahwa selain tingkat kemiskinan secara absolut, <strong>ketimpangan (gap) antara desa dan kota</strong> secara mandiri menyumbang peningkatan angka stunting (koefisien positif +0.16), menegaskan bahwa keadilan spasial sama pentingnya dengan pertumbuhan ekonomi.
+                Pengembangan model regresi lebih lanjut (R² = 0,306) memasukkan variabel <em>Gap Kemiskinan Desa-Kota</em> bersamaan dengan <em>Kemiskinan Total</em>. Hasilnya, <code style={{background:'rgba(0,0,0,0.05)', padding:'2px 6px', borderRadius:'4px'}}>Stunting = 17,111 + 0,448(Kemiskinan Total) + 0,162(Gap Desa-Kota)</code>. Model ini secara brilian membuktikan bahwa selain tingkat kemiskinan secara absolut, <strong>ketimpangan (gap) antara desa dan kota</strong> secara mandiri menyumbang peningkatan angka stunting (koefisien positif +0,162), menegaskan bahwa keadilan spasial sama pentingnya dengan pertumbuhan ekonomi.
               </p>
             </div>
           </div>
@@ -434,7 +434,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ flex: 1 }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px' }}>12. Dekonstruksi Indeks Ketahanan Pangan (IKP) & Analisis Kuadran</h2>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
-                Membedah IKP menjadi 3 komponen utama. Hasilnya sangat kontras: <strong>Ketersediaan Pangan</strong> tidak memiliki korelasi signifikan terhadap stunting (p = 0.733). Namun, <strong>Keterjangkauan Pangan</strong> (daya beli, r = -0.499) dan <strong>Pemanfaatan Pangan</strong> (sanitasi & air, r = -0.490) terbukti sebagai komponen yang paling krusial dalam pencegahan stunting. 
+                Membedah IKP menjadi 3 komponen utama. Hasilnya sangat kontras: <strong>Ketersediaan Pangan</strong> tidak memiliki korelasi signifikan terhadap stunting (p = 0,733). Namun, <strong>Keterjangkauan Pangan</strong> (daya beli, r = -0,499) dan <strong>Pemanfaatan Pangan</strong> (sanitasi & air, r = -0,490) terbukti sebagai komponen yang paling krusial dalam pencegahan stunting. 
               </p>
               <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, marginBottom: '16px' }}>
                 Berdasarkan Analisis Kuadran IKP vs Stunting, 9 provinsi (sebagian besar di Indonesia Timur) masuk dalam <strong>Kuadran Prioritas</strong> (IKP Rendah, Stunting Tinggi). Sebaliknya, terdapat 8 provinsi <strong>Anomali</strong> (IKP Tinggi, Stunting Tinggi), yang mengindikasikan masalah murni di luar ketersediaan pangan seperti praktik pola asuh dan kualitas sanitasi pedesaan.
