@@ -79,7 +79,7 @@ const AdvancedAnalysis = ({ data }) => {
           <div>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '12px', color: 'var(--text-primary)' }}>Disparitas Stunting (Max vs Min)</h3>
             <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Rata-rata prevalensi stunting nasional berada di angka <strong>22,44%</strong>. Namun, angka ini menyembunyikan realitas ekstrem di lapangan. Rentang nilai (Min-Max) menunjukkan jarak yang sangat lebar: dari yang terbaik di angka <strong>7,20% (Bali)</strong> hingga yang terburuk mencapai <strong>37,90% (Papua)</strong>. Ketimpangan ini menegaskan perlunya pendekatan asimetris dalam kebijakan pengentasan stunting, bukan intervensi "satu solusi untuk semua".
+              Rata-rata prevalensi stunting nasional berada di angka <strong>22,44%</strong>. Namun, angka ini menyembunyikan realitas ekstrem di lapangan. Rentang nilai (Min-Max) menunjukkan jarak yang sangat lebar: dari yang terbaik di angka <strong>7,20% (Bali)</strong> hingga yang terburuk mencapai <strong>37,90% (Nusa Tenggara Timur)</strong>. Ketimpangan ini menegaskan perlunya pendekatan asimetris dalam kebijakan pengentasan stunting, bukan intervensi "satu solusi untuk semua".
             </p>
           </div>
           <div>
@@ -191,13 +191,13 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ padding: '20px', borderLeft: '4px solid #f59e0b', background: 'rgba(245, 158, 11, 0.05)', borderRadius: '0 8px 8px 0' }}>
               <h4 style={{ color: '#f59e0b', fontWeight: 700, fontSize: '1.1rem', marginBottom: '8px' }}>Klaster Menengah (Kuning)</h4>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.5 }}>
-                Terdapat <strong>25 Provinsi</strong> transisi dengan kerentanan sedang. Masih memiliki angka stunting di ambang batas peringatan WHO dengan ketersediaan pangan yang berfluktuasi.
+                Terdapat <strong>20 Provinsi</strong> transisi dengan kerentanan sedang. Masih memiliki angka stunting di ambang batas peringatan WHO dengan ketersediaan pangan yang berfluktuasi.
               </p>
             </div>
             <div style={{ padding: '20px', borderLeft: '4px solid #10b981', background: 'rgba(16, 185, 129, 0.05)', borderRadius: '0 8px 8px 0' }}>
               <h4 style={{ color: '#10b981', fontWeight: 700, fontSize: '1.1rem', marginBottom: '8px' }}>Klaster Mapan (Hijau)</h4>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.5 }}>
-                Terdapat <strong>5 Provinsi</strong>: KEP. RIAU, DKI JAKARTA, DI YOGYAKARTA, BALI, KALIMANTAN TIMUR.<br/>
+                Terdapat <strong>10 Provinsi</strong>: Riau, Jambi, Kep. Bangka Belitung, Kep. Riau, DKI Jakarta, Bali, Kalimantan Tengah, Kalimantan Timur, Kalimantan Utara, Maluku Utara.<br/>
                 Karakteristik: Kinerja penanganan stunting sangat baik (IPM tinggi) didukung akses pangan stabil.
               </p>
             </div>
@@ -229,7 +229,7 @@ const AdvancedAnalysis = ({ data }) => {
             <div style={{ marginBottom: '24px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                 <span style={{ color: 'var(--text-secondary)' }}>Moran's I (PoU)</span>
-                <strong style={{ color: '#ef4444' }}>+0,440</strong>
+                <strong style={{ color: '#ef4444' }}>+0,484</strong>
               </div>
               <div style={{ width: '100%', height: '8px', background: '#333', borderRadius: '4px', overflow: 'hidden' }}>
                 <div style={{ width: '72%', height: '100%', background: '#ef4444' }}></div>
